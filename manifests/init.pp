@@ -1,6 +1,6 @@
 class lsb {
   case $::operatingsystem {
-    debian: { include lsb::debian }
+    debian,ubuntu: { include lsb::debian }
     centos: { include lsb::centos }
   }
 }
